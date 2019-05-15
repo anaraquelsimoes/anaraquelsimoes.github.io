@@ -1,0 +1,22 @@
+title: Anas DXD blog
+author: Anas
+email: ana.adelino1997@gmail.com
+description: > # this means to ignore newlines until "exclude"
+  This site belongs to Anas. Estamos a usar gatos.
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+
+# Date format for posts
+# refer to http://shopify.github.io/liquid/filters/date/ if you
+# want to customize this
+date_format: "%b %-d, %Y"
+
+# generate social links in footer
+social_links:
+  twitter: danielfdsilva
+  github:  danielfdsilva
+  # facebook:
