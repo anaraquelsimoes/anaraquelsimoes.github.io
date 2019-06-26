@@ -2,30 +2,108 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-{% for post in site.posts %}
-            {% if post.featured %}
-          <li>
-            {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-               {{ post.title }}
-              </a>
-            </h3>
-          </li>
-            {% endif %}
-{% endfor %}
+<section id="bio">
+    <h1>About me</h1>
+    <section>
+        <img src="images/profile.jpg" alt="profile picture">
+        <p>With a Degree in Communication Design, I consider myself a person with good work ethic and good communication skills to work in a team and communicate with others in general.</p>
+        <p>I like to work on different areas of Design from editorial to digital as well as video editing, marketing and a lot more. Overall, I like to be creative.</p>
+        <p>I am a perfectionist through and through. I pay a lot of attention to detail and like to be 100% satisfied with everything I do.</p>
+    </section>
+</section>
+<section id="my_work">
+    <h1>My Work</h1>
+    <ul>
+        <li>
+            <img src="images/NR1.jpg" alt="multimedia publication">
+            <h2>Neon Rose, 2017</h2>
+            <p>This was a multimedia publication that was developed as a group project about the sixties counterculture and the Free Speech Movement. We tried to show how those revolutions are affecting our youth and the way they choose to protest and claim their rights nowadays.</p>
+        </li>
+        <li>
+            <img src="images/typography.jpg" alt="two flyers">
+            <h2>First Things First, 2016</h2>
+            <p>First Things First is a typographic experiment that I did based on the First Things First manifesto, from 1964. I created two posters with one of the main teachings of the manifesto using only typography.</p>
+        </li>
+        <li>
+            <img src="images/MG1.jpg" alt="multimedia publication">
+            <h2>Inner City Blues, 2017</h2>
+            <p>This was another multimedia publication that was developed as a group project, once again about the sixties counterculture. This time we were challenged to create a "mixtape for revolution" - songs with a revolutionary purpose - and then create a publication around it.</p>
+        </li>
+        <li>
+            <img src="images/sopa.jpg" alt="illustration book">
+            <h2>Receita da Sopa da Pedra, 2016</h2>
+            <p>For this project I took a classic children's tale - Sopa da Pedra - and created illustrations for it. When designing the book I decided to give it a little twist to make it more fun to read and turned it into a make-believe recipe book.</p>
+        </li>
+        <li>
+            <img src="images/DP.jpg" alt="booklet and flyer">
+            <h2>Design Português - pós-revolução, 2017</h2>
+            <p>This group project is about the History of Design. My group and I decided to explore Portuguese Design - where did it come from? when was it born? who are the main references? - We ended up focusing on Designer José Brandão and Professor Aurelindo Jaime Ceia.</p>
+        </li>
+        <li>
+            <iframe src="https://www.youtube.com/embed/oXSdsBbWb2k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>No Big Deal, 2018</h2>
+            <p>No Big Deal is a Web App that I created and designed as a project for my post-graduation in Digital Experience Design. It's purpose is to allow people who need certain everyday tasks done for them, and people with some spare time and in need of some money, to find and help each other out.</p>
+        </li>
     </ul>
-  {%- endif -%}
-
-</div>
+    <a href="https://drive.google.com/file/d/1FRk6jch0pCf1kyv0crg7RhHw2TpkiO92/view">Download my complete portfolio here!</a>
+</section>
+<section id="skills">
+    <h1>Skills</h1>
+    <ul>
+        <li>
+            <img src="images/photoshop.svg" alt="Photoshop Logo">
+            <p>Adobe Photoshop</p>
+            <p>Very competent</p>
+        </li>
+        <li>
+            <img src="images/indesign.svg" alt="Indesign Logo">
+            <p>Adobe Indesign</p>
+            <p>Very competent</p>
+        </li>
+        <li>
+            <img src="images/illustrator.svg" alt="Illustrator Logo">
+            <p>Adobe Illustrator</p>
+            <p>Competent</p>
+        </li>
+        <li>
+            <img src="images/AfterEffects.svg" alt="After Effects Logo">
+            <p>Adobe After Effects</p>
+            <p>Competent</p>
+        </li>
+        <li>
+            <img src="images/premiere.svg" alt="Premiere Logo">
+            <p>Adobe Premiere</p>
+            <p>Very competent</p>
+        </li>
+        <li>
+            <img src="images/skecth.svg" alt="Sketch Logo">
+            <p>Sketch</p>
+            <p>Very competent</p>
+        </li>
+        <li>
+            <img src="images/brackets.svg" alt="Brackets Logo">
+            <p>HTML/CSS</p>
+            <p>Competent</p>
+        </li>
+    </ul>
+</section>
+<section id="education">
+    <h1>Education</h1>
+    <ol>
+    <li>
+        <h2>Post-Graduation in Digital Experience Design | 2018 - 2019</h2>
+        <p>Faculdade de Belas-Artes, Universidade de Lisboa</p>
+        <p>I am currently attending this post-graduation which specializes in Webdesign, more specifically UX and UI Design. I am also learning coding languages - HTML and CSS - which is very helpful in this area.</p>
+    </li>
+    <li>
+        <h2>Bachelor's Degree in Communication Design | 2015 - 2018</h2>
+        <p>Faculdade de Belas-Artes, Universidade de Lisboa</p>
+        <p>With a big focus on Graphic Design, Multimedia Art and social activism, this degree gave me the tools I need to be a well educated designer who's aware of the problems in this contemporary world and capable of acting on it though the art of design.</p>
+    </li>
+    <li>
+        <h2>High School in Visual Arts | 2012 - 2015</h2>
+        <p>Escola Secundária de Sampaio</p>
+        <p>I completed secondary education in Visual Arts and that was what made me want to pursue a career in Design. I acquired some Photoshop, InDesign and Premiere skills that were really helpful throughout my Degree in Communication Design.</p>
+    </li>
+    </ol>
+</section>
