@@ -1,4 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$mytype: 'Roboto', sans-serif;
+$brandcolor: red;
+
 body {
-    background-color: red;
+    font-family: $mytype;
+    background-color: yellow;
 }
 
+
+a,
+h2 {
+    color: $brandcolor;
+}
+
+.post-list {
+    list-style: none;
+    a {
+        color: green;
+    }
+}
