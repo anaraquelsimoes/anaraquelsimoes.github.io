@@ -6,7 +6,7 @@ body {
 
 header {
     height: 100vh;
-    background: url(images/booklet.jpg);
+    background: url(/assets/images/booklet.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -30,7 +30,7 @@ div span {
     display: block;
     width: 100px;
     height: 45px;
-    background: url(images/Signature_of_Vishwanathan_Anand.png);
+    background: url(/assets/images/Signature_of_Vishwanathan_Anand.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -93,7 +93,7 @@ article p {
 .arrow {
     width: 8%;
     height: 30px;
-    background: url(images/arrow.svg);
+    background: url(/assets/images/arrow.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
