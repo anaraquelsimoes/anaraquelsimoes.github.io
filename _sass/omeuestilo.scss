@@ -6,7 +6,8 @@ body {
 
 header {
     height: 100vh;
-    background: url(/assets/images/booklet.jpg);
+    width: 100%;
+    background: url(/assets/images/teste_4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -23,30 +24,30 @@ div {
 }
 
 div span {
-    margin: 15px;
+    margin: 20px;
 }
 
 .logo {
     display: block;
-    width: 100px;
-    height: 45px;
+    width: 80px;
+    height: 40px;
     background: url(/assets/images/Signature_of_Vishwanathan_Anand.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-header nav {
+nav {
     height: 10%;
     position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    right: 0px;
-    top: 0px;
+    right: 15px;
+    top: 10px;
 }
 
-header nav ul li {
+nav ul li {
     float: left;
     list-style: none;
     padding-right: 10px;
@@ -55,13 +56,13 @@ header nav ul li {
     font-weight: bold;
 }
 
-header a {
+nav a {
     text-decoration: none;
     color: black;
     transition: 0.2s;
 }
 
-a:hover {
+nav a:hover {
     opacity: 0.5;
     transition: 0.2s;
 
@@ -77,18 +78,19 @@ header article {
 }
 
 article h1 {
-    font-size: 35px;
+    font-size: 26px;
     text-align: center;
     width: 300px;
 }
 
 article p {
-    width: 300px;
-    font-size: 16px;
+    width: 280px;
+    font-size: 14px;
     text-align: center;
-    line-height: 1.6;
+    line-height: 2;
     margin-top: 0px;
 }
+
 
 .arrow {
     width: 8%;
@@ -110,44 +112,27 @@ section {
 
 section h1 {
     flex-direction: column;
-    width: 380px;
     text-align: left;
     font-size: 20px;
     margin-top: 22%;
-    color: dimgrey;
+    color: black;
 }
 
 section img {
-    width: 380px;
+    width: 80%;
 }
 
-#bio {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20%;
-    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
-}
-
-#bio img {
-    margin-top: 5%;;
-}
-
-#bio p {
-    width: 380px;
-    font-size: 16px;
-    margin: 15px; 
-    line-height: 1.6;
-}
-
-#bio p:first-of-type {
-    padding-top: 10%;
-}
 
 #my_work {
+    display: grid;
     width: 100%;
     height: 100%;
     padding-bottom: 20%;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
+}
+
+#my_work h1 {
+    text-align: center;
 }
 
 #my_work ul {
@@ -167,31 +152,29 @@ section img {
 }
 
 #my_work h2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     padding-top: 5%;
 }
 
-#my_work p {
-    text-align: center;
-    width: 360px;
-    font-size: 16px;
-    margin: 0px;
-    line-height: 1.7;
-}
-
 iframe {
-    width: 380px;
+    width: 80%;
     height: 190px;
     border: none;
 }
 
 main a {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: dimgrey;
     margin-top: 10%;
     transition: 0.2s;
+    text-align: center;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
 }
 
 #skills {
@@ -203,7 +186,7 @@ main a {
 
 #skills ul {
     display: block;
-    width: 380px;
+    width: 300px;
     padding: 0px;
     margin-top: 5%;
 }
@@ -214,8 +197,8 @@ main a {
     align-items: center;
     width: 100px;
     float: left;
-    padding-left: 27px;
-    margin-right: 100px;
+    padding-left: 30px;
+    padding-bottom: 40px;
 }
 
 #skills ul li:nth-of-type(2n) {
@@ -224,19 +207,19 @@ main a {
     align-items: center;
     width: 100px;
     float: none;
-    margin-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 #skills p {
     text-align: center;
     width: 160px;
-    font-size: 14px;
+    font-size: 10px;
     margin: 0px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 #skills p:nth-of-type(2n+1) {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     padding-top: 20px;
 }
@@ -246,6 +229,7 @@ main a {
     height: 70px;
     margin-top: 5%;
 }
+
 
 #education {
     width: 100%;
@@ -264,33 +248,33 @@ main a {
 }
 
 #education h2 {
-    width: 380px;
-    font-size: 18px;
+    width: 280px;
+    font-size: 16px;
     font-weight: bold;
     text-align: left;
-    line-height: 1.6;
-    padding-top: 3%;
+    line-height: 2;
 }
 
 #education p:nth-of-type(2n+1) {
-    width: 380px;
-    font-size: 17px;
+    width: 260px;
+    font-size: 15px;
     text-align: left;
+    line-height: 2;
 }
 
 #education p:nth-of-type(2n) {
-    width: 380px;
-    font-size: 16px;
+    width: 280px;
+    font-size: 14px;
     text-align: left;
     padding-top: 3%;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 #contacts {
     width: 100%;
     height: 100%;
     padding-bottom: 10%;
-    background-color: #f2f2f2;
+    background-color: #1c1c1c;
 }
 
 footer {
@@ -301,24 +285,35 @@ footer {
 
 footer h1 {
     flex-direction: column;
-    width: 380px;
+    width: 280px;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10%;
-    color: dimgrey;
+    color: white;
 }
 
 footer p {
-    width: 380px;
-    font-size: 16px;
-    color: dimgray;
+    width: 280px;
+    font-size: 14px;
+    color: white;
     text-align: left;
 }
 
 
 @media (min-width: 600px) {
+    
+    .logo {
+    width: 120px;
+    height: 50px;
+    }
+    
+    header {
+    width: auto;
+    background: url(/assets/images/boost_medio_pequeno.jpg);    
+    }
+    
     header nav ul li {
-        font-size: 14px;
+        font-size: 16px;
         padding-right: 12px;
         padding-left: 12px;
     }
@@ -333,29 +328,13 @@ footer p {
         width: 350px;
         font-size: 17px;
         text-align: left;
-        line-height: 1.7;
+        line-height: 2;
     }
     
     .arrow {
         width: 8%;
     }
-
-    section img {
-        width: 480px;
-    }
-
-    section h1 {
-        width: 480px; 
-        text-align: left;
-        font-size: 25px;
-        margin-top: 19%;
-    }
-
-    #bio p {
-        width: 470px;
-        font-size: 17px;
-    }
-
+    
     main a {
         font-size: 21px;  
     }
@@ -364,6 +343,60 @@ footer p {
         width: 480px;
         height: 240px;
     }
+    
+    #skills {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20%;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
+    }
+
+    #skills ul {
+        display: block;
+        width: 380px;
+        padding: 0px;
+        margin-top: 5%;
+    }
+
+    #skills ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        float: left;
+        padding-left: 27px;
+        margin-right: 100px;
+    }
+
+    #skills ul li:nth-of-type(2n) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        float: none;
+        margin-bottom: 60px;
+    }
+
+    #skills p {
+        text-align: center;
+        width: 160px;
+        font-size: 14px;
+        margin: 0px;
+        padding-top: 10px;
+    }
+
+    #skills p:nth-of-type(2n+1) {
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
+    #skills img {
+        width: 70px;;
+        height: 70px;
+        margin-top: 5%;
+    }
+
 
     #education h2 {
         width: 480px;
@@ -377,12 +410,12 @@ footer p {
         width: 480px;
     }
 
-    footer h1 {
+    #contacts h1 {
         width: 480px;
         font-size: 25px;
     }
 
-    footer p {
+    #contacts p {
         width: 480px;
         font-size: 16px;
     }
@@ -391,6 +424,12 @@ footer p {
 
 
 @media (min-width: 800px) {
+    
+    header {
+    width: auto;
+    background: url(/assets/images/boost_medio.jpg);    
+    }
+    
     header article {
         align-items: flex-start;
     }
@@ -406,29 +445,6 @@ footer p {
     
     .arrow {
         width: 8%;
-    }
-
-    section img {
-        width: 580px;
-    }
-
-    section img:first-of-type {
-        width: 580px;
-    }
-
-    section h1 {
-        width: 580px;
-        margin-top: 18%;
-    }
-
-    #bio p {
-        width: 570px;
-        font-size: 17px;
-    }
-
-    #my_work p {
-        width: 560px;
-        font-size: 17px;
     }
 
     iframe {
@@ -464,13 +480,13 @@ footer p {
         font-size: 17px;
     }
 
-    footer h1 {
+    #contacts h1 {
         width: 580px;
         font-size: 25px;
         margin-top: 11%;
     }
 
-    footer p {
+    #contacts p {
         width: 580px;
         font-size: 16px;
     }
@@ -500,46 +516,14 @@ footer p {
         font-size: 20px;
         margin-left: 6%;
     }
-
-    section {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    section img {
-        width: 580px;
-        margin-left: 7%;
-    }
-
-    section h1 {
-        width: 580px;
-        margin-left: 7%;
-        margin-top: 12%;
-    }
-    
-    #bio section {
-        display: block;
-    }
-
-    #bio img {
-        width: 450px;
-        float: left;
-        margin-left: 17%;
-    }
-
-    #bio p {
-        width: 470px;
-        font-size: 18px;
-        margin-left: 120%;
-        float: none;
-    }
-    
-    #bio p:first-of-type {
-        padding-top: 5px;
-    }
-
+ 
+    #my_work h1 {
+    text-align: left;
+}
+  
     #my_work {
         padding-bottom: 15%;
+        
     }
     
     #my_work ul li {
@@ -643,13 +627,15 @@ footer p {
         align-items: flex-start;
     }
 
-    footer h1 {
-        font-size: 25px;
+    #contacts h1 {
+        width: 780px;
+        font-size: 30px;
         margin-left: 7%;
         margin-top: 8%;
     }
 
-    footer p {
+    #contacts p {
+        width: 780px;
         font-size: 18px;
         margin-left: 7%;
     }
@@ -658,20 +644,10 @@ footer p {
 
 
 @media (min-width: 1280px) {
-    section h1 {
-        margin-top: 11%;
-    }
     
-    #bio {
-        padding-bottom: 15%;
-    }
-
-    #bio img {
-        width: 550px;
-    }
-
-    #bio p {
-        margin-left: 128%;
+    header {
+    width: auto;
+    background: url(/assets/images/teste_4.jpg);    
     }
     
     #my_work {
@@ -712,4 +688,7 @@ footer p {
         padding-bottom: 10%;
     }
     
+    #contacts h1 {
+        font-size: 30px;
+    }
 }
