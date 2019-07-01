@@ -11,9 +11,10 @@ layout: default
         <li>
             <figure>
                 <img src="{{ post.image }}" alt="multimedia publication">
-                <h3>
+                <h2>
                     <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                </h3>
+                </h2>
+                <h3>{{ post.subtitle | escape }}</h3>
             </figure>
         </li>
     {% endfor %}
