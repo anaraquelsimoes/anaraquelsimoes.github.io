@@ -6,30 +6,17 @@ layout: default
 <section id="my_work">
     <h1>My Work</h1>
     <ul>
+        
+    {% for post in site.posts %}
         <li>
-            <img src="assets/images/NR1.jpg" alt="multimedia publication">
-            <h2>Neon Rose, 2017</h2>
+            <figure>
+                <img src="{{ post.image }}" alt="multimedia publication">
+                <h3>
+                    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                </h3>
+            </figure>
         </li>
-        <li>
-            <img src="assets/images/typography.jpg" alt="two flyers">
-            <h2>First Things First, 2016</h2>
-        </li>
-        <li>
-            <img src="assets/images/MG1.jpg" alt="multimedia publication">
-            <h2>Inner City Blues, 2017</h2>
-        </li>
-        <li>
-            <img src="assets/images/sopa.jpg" alt="illustration book">
-            <h2>Receita da Sopa da Pedra, 2016</h2>
-        </li>
-        <li>
-            <img src="assets/images/DP.jpg" alt="booklet and flyer">
-            <h2>Design Português - pós-revolução, 2017</h2>
-        </li>
-        <li>
-            <iframe src="https://www.youtube.com/embed/oXSdsBbWb2k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h2>No Big Deal, 2018</h2>
-        </li>
+    {% endfor %}
+        
     </ul>
-    <a href="https://drive.google.com/file/d/1FRk6jch0pCf1kyv0crg7RhHw2TpkiO92/view">Download my complete portfolio here!</a>
 </section>

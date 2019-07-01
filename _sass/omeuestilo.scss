@@ -4,6 +4,10 @@ body {
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 header {
     height: 100vh;
     width: 100%;
@@ -119,42 +123,22 @@ section h1 {
 }
 
 section img {
-    width: 80%;
+    width: 100%;
 }
 
+figure {
+    margin: 20px;
+}
 
 #my_work {
-    display: grid;
     width: 100%;
     height: 100%;
     padding-bottom: 20%;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
 }
 
-#my_work h1 {
-    text-align: center;
-}
-
 #my_work ul {
-    padding: 0px;
-    list-style: none;
-}
-
-#my_work ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20%;
-}
-
-#my_work li:first-of-type {
-    margin-top: 0%;
-}
-
-#my_work h2 {
-    font-size: 15px;
-    font-weight: bold;
-    padding-top: 5%;
+    padding: 0;
 }
 
 iframe {
@@ -519,7 +503,7 @@ footer p {
  
     #my_work h1 {
     text-align: left;
-}
+    }
   
     #my_work {
         padding-bottom: 15%;
@@ -527,7 +511,6 @@ footer p {
     }
     
     #my_work ul li {
-        width: 100vw;
         height: 400px;
         display: block;
         margin: 0px;
