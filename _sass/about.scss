@@ -5,7 +5,7 @@ section {
 
 }
 
-section h1 {
+#bio h1, #skills h1, #education h1 {
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -37,11 +37,100 @@ section h1 {
     padding-top: 10%;
 }
 
+#skills {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20%;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
+}
+
+#skills ul {
+    display: block;
+    width: 300px;
+    padding: 0px;
+    margin-top: 5%;
+}
+
+#skills ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    float: left;
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+#skills ul li:nth-of-type(2n) {
+    float: none;
+}
+
+#skills p {
+    text-align: center;
+    width: 160px;
+    font-size: 10px;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+#skills p:nth-of-type(2n+1) {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#skills img {
+    width: 70px;;
+    height: 70px;
+    margin-top: 5%;
+}
+
+#education {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20%;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
+}
+
+#education ol {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#education ol li {
+    padding-bottom: 8%;
+}
+
+#education h2 {
+    width: 280px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 2;
+}
+
 #education p:nth-of-type(2n+1) {
-        color: darkgrey;
-    }
+    color: darkgrey;
+    width: 260px;
+    font-size: 15px;
+    text-align: left;
+    line-height: 2;
+}
+
+#education p:nth-of-type(2n) {
+    width: 280px;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 3%;
+    line-height: 2;
+}
 
 @media (min-width: 480px) {
+    
+    #bio h1, #skills h1, #education h1 {
+    margin-top: 20%;
+    }
+    
     #bio p {
         width: 380px;
     }
@@ -71,15 +160,15 @@ section h1 {
 
 @media (min-width: 600px) {
     
-nav ul li {
+    nav ul li {
         font-size: 16px;
         padding-right: 16px;
         padding-left: 16px;
     }
     
-    section h1 {
+    #bio h1, #skills h1, #education h1 {
     font-size: 25px;
-    margin-top: 10%;
+    margin-top: 18%;
 
     }
 
@@ -92,25 +181,49 @@ nav ul li {
         width: 80%;
     }
     
-      #education p:nth-of-type(2n) {
+    #skills ul {
+        width: 380px;
+    }
+
+    #skills ul li {
+        padding-left: 27px;
+        margin-right: 100px;
+    }
+
+    #skills ul li:nth-of-type(2n) {
+        margin-bottom: 60px;
+    }
+
+    #skills p {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    #skills p:nth-of-type(2n+1) {
+        font-size: 16px;
+    }
+
+    #education h2 {
         width: 480px;
     }
-    
+
     #education p:nth-of-type(2n+1) {
         width: 480px;
     }
     
-    #education h2 {
+    #education p:nth-of-type(2n) {
         width: 480px;
     }
 
 }
 
 
-
-
 @media (min-width: 800px) {
   
+    #bio h1, #skills h1, #education h1 {
+    margin-top: 15%;
+    }
+    
     #bio img {
         width: 70%;
     }
@@ -120,24 +233,32 @@ nav ul li {
         font-size: 17px;
     }
     
-    #education p:nth-of-type(2n) {
-        width: 580px;
+    #skills p:nth-of-type(2n+1) {
+        font-size: 17px;
+    }
+
+    #skills p {
+        font-size: 15px;
     }
     
-    #education p:nth-of-type(2n+1) {
-        width: 580px;
+    #skills img {
+        width: 90px;;
+        height: 90px;
     }
-    
+
     #education h2 {
         width: 580px;
+        font-size: 18px;
     }
-    
-    #contacts h1 {
-        width: 680px;
+
+    #education p:nth-of-type(2n+1) {
+        width: 580px;
+        font-size: 17px;
     }
-    
-    #contacts p {
-        width: 680px;
+
+    #education p:nth-of-type(2n) {
+        width: 580px;
+        font-size: 17px;
     }
 }
 
@@ -150,6 +271,7 @@ nav ul li {
     } 
     
     #bio h1, #skills h1, #education h1 {
+        font-size: 30px;
         width: 780px;
         text-align: left;
         padding-top: 0;
@@ -177,6 +299,43 @@ nav ul li {
         padding-top: 5px;
     }
     
+    #skills {
+        padding-bottom: 9%;
+    }
+
+    #skills ul {
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        margin-left: 7%;
+    }
+
+    #skills p {
+        font-size: 16px;
+    }
+    
+    #education {
+        padding-bottom: 12%;
+    }
+    
+    #education ol {
+        margin-left: 7%;
+    }
+
+    #education h2 {
+        font-size: 21px;
+        padding-top: 0%;
+    }
+
+    #education p:nth-of-type(2n+1) {
+        font-size: 18px;
+    }
+
+    #education p:nth-of-type(2n) {
+        width: 650px;
+    }
+    
 }
 
 
@@ -201,6 +360,14 @@ nav ul li {
     
     #skills h1 {
         font-size: 30px;
+    }
+    
+     #skills {
+        padding-bottom: 8%;
+    }
+    
+    #education {
+        padding-bottom: 10%;
     }
     
     #education h1 {

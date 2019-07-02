@@ -115,6 +115,15 @@ section {
     flex-direction: column;
 }
 
+#my_work h1 {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30%;
+    color: black;
+}
+
 section img {
     width: 100%;
 }
@@ -156,12 +165,15 @@ figure {
     margin: 10px 0;
 }
 
-
 #my_work a {
     font-size: 16px;
     font-weight: bold;
     color: #1c1c1c;
-    border-bottom: 2;
+    text-decoration: none;
+}
+
+#my_work a:hover {
+    text-decoration: underline;
 }
 
 #my_work img {
@@ -173,114 +185,6 @@ figure {
     margin-right: 100px;
     transition: margin-right 1s;
 
-}
-
-
-main a {
-    font-size: 15px;
-    font-weight: bold;
-    color: dimgrey;
-    margin-top: 10%;
-    transition: 0.2s;
-    text-align: center;
-    text-decoration: none;
-}
-
-main a:hover {
-    text-decoration: underline;
-}
-
-#skills {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20%;
-    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
-}
-
-#skills ul {
-    display: block;
-    width: 300px;
-    padding: 0px;
-    margin-top: 5%;
-}
-
-#skills ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-    float: left;
-    padding-left: 30px;
-    padding-bottom: 40px;
-}
-
-#skills ul li:nth-of-type(2n) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-    float: none;
-    padding-bottom: 40px;
-}
-
-#skills p {
-    text-align: center;
-    width: 160px;
-    font-size: 10px;
-    margin: 0px;
-    padding-top: 5px;
-}
-
-#skills p:nth-of-type(2n+1) {
-    font-size: 12px;
-    font-weight: bold;
-    padding-top: 20px;
-}
-
-#skills img {
-    width: 70px;;
-    height: 70px;
-    margin-top: 5%;
-}
-
-
-#education {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20%;
-    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
-}
-
-#education ol {
-    list-style: none;
-    padding-left: 0px;
-}
-
-#education ol li {
-    padding-bottom: 8%;
-}
-
-#education h2 {
-    width: 280px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    line-height: 2;
-}
-
-#education p:nth-of-type(2n+1) {
-    width: 260px;
-    font-size: 15px;
-    text-align: left;
-    line-height: 2;
-}
-
-#education p:nth-of-type(2n) {
-    width: 280px;
-    font-size: 14px;
-    text-align: left;
-    padding-top: 3%;
-    line-height: 2;
 }
 
 #contacts {
@@ -353,70 +257,9 @@ footer p {
     }
 
     
-    #skills {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20%;
-    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
-    }
-
-    #skills ul {
-        display: block;
-        width: 380px;
-        padding: 0px;
-        margin-top: 5%;
-    }
-
-    #skills ul li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100px;
-        float: left;
-        padding-left: 27px;
-        margin-right: 100px;
-    }
-
-    #skills ul li:nth-of-type(2n) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100px;
-        float: none;
-        margin-bottom: 60px;
-    }
-
-    #skills p {
-        text-align: center;
-        width: 160px;
-        font-size: 14px;
-        margin: 0px;
-        padding-top: 10px;
-    }
-
-    #skills p:nth-of-type(2n+1) {
-        font-size: 16px;
-        font-weight: bold;
-        padding-top: 20px;
-    }
-
-    #skills img {
-        width: 70px;;
-        height: 70px;
-        margin-top: 5%;
-    }
-
-
-    #education h2 {
-        width: 480px;
-    }
-
-    #education p:nth-of-type(2n+1) {
-        width: 480px;
-    }
-
-    #education p:nth-of-type(2n) {
-        width: 480px;
+    #my_work h1 {
+        font-size: 25px;
+        margin-top: 20%;
     }
 
     #contacts h1 {
@@ -456,6 +299,11 @@ footer p {
         width: 8%;
     }
     
+    #my_work h1 {
+    font-size: 25px;
+    margin-top: 15%;
+    }
+    
     #my_work ul {
     width: 100%;
     display: flex;
@@ -472,42 +320,14 @@ footer p {
 
     }
 
-    #skills p:nth-of-type(2n+1) {
-        font-size: 17px;
-    }
-
-    #skills p {
-        font-size: 15px;
-    }
-    
-    #skills img {
-        width: 90px;;
-        height: 90px;
-    }
-
-    #education h2 {
-        width: 580px;
-        font-size: 18px;
-    }
-
-    #education p:nth-of-type(2n+1) {
-        width: 580px;
-        font-size: 17px;
-    }
-
-    #education p:nth-of-type(2n) {
-        width: 580px;
-        font-size: 17px;
-    }
-
     #contacts h1 {
-        width: 580px;
+        width: 680px;
         font-size: 25px;
         margin-top: 11%;
     }
 
     #contacts p {
-        width: 580px;
+        width: 680px;
         font-size: 16px;
     }
 
@@ -537,57 +357,16 @@ footer p {
         margin-left: 6%;
     }
     
+    #my_work h1 {
+    font-size: 30px;
+    margin-top: 12%;
+    }
+    
     #my_work ul li {
     width: 30%;
 
     }
  
-    
-    #skills {
-        padding-bottom: 9%;
-    }
-
-    #skills ul {
-        width: 1000px;
-        display: flex;
-        flex-direction: row;
-        flex-flow: row wrap;
-        margin-left: 7%;
-    }
-    
-    #skills img {
-        width: 90px;;
-        height: 90px;
-    }
-    
-    #skills p:nth-of-type(2n+1) {
-        font-size: 17px;
-    }
-
-    #skills p {
-        font-size: 16px;
-    }
-    
-    #education {
-        padding-bottom: 12%;
-    }
-    
-    #education ol {
-        margin-left: 7%;
-    }
-
-    #education h2 {
-        font-size: 21px;
-        padding-top: 0%;
-    }
-
-    #education p:nth-of-type(2n+1) {
-        font-size: 18px;
-    }
-
-    #education p:nth-of-type(2n) {
-        width: 650px;
-    }
 
     footer {
         display: flex;
@@ -615,16 +394,6 @@ footer p {
     header {
     width: auto;
     background: url(/assets/images/teste_4.jpg);    
-    }
-    
-    
-    
-    #skills {
-        padding-bottom: 8%;
-    }
-    
-    #education {
-        padding-bottom: 10%;
     }
     
     #contacts h1 {
