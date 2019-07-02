@@ -6,11 +6,13 @@
 
 #posts img {
     width: 93%;
+    padding-top: 7%;
 }
 
 #posts .top_image {
     margin-top: 25%;
     width: 100%;
+    padding-top: 0;
 }
 
 #posts h1 {
@@ -19,7 +21,7 @@
     font-weight: bold;
     text-align: left;
     padding-left: 7%;
-    padding-top: 15%;
+    padding-top: 13%;
     margin: 0;
 }
 
@@ -34,6 +36,16 @@
     color: darkgray;
 }
 
+#posts h3 {
+    idth: 93%;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 7%;
+    margin: 0;
+    color: darkgray;
+}
+
 #posts p {
     width: 85%;
     font-size: 16px;
@@ -43,7 +55,10 @@
 
 #posts p:first-of-type {
     margin-top: 10%;
+}
 
+#posts figure:last-of-type {
+    margin-bottom: 30%;
 }
 
 
