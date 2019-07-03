@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #bio h1, #skills h1, #education h1 {
@@ -37,7 +36,6 @@
         padding-top: 10%;
     }
 }
-
 
 #skills {
     width: 100%;
@@ -124,7 +122,6 @@
     }
 }
 
-
 @media (min-width: 480px) {
     
     #bio h1, #skills h1, #education h1 {
@@ -161,10 +158,8 @@
     
     #education h2 {
         width: 380px;
-    }
-    
+    } 
 }
-
 
 @media (min-width: 600px) {
     
@@ -177,7 +172,6 @@
     #bio h1, #skills h1, #education h1 {
         font-size: 25px;
         margin-top: 18%;
-
     }
 
     #bio {
@@ -211,9 +205,7 @@
         p:nth-of-type(2n) {
             width: 480px;
         }
- 
     }
-
 }
 
 
@@ -232,8 +224,7 @@
         p {
             width: 570px;
             font-size: 17px;
-        }
-        
+        }  
     }
     
     #skills {
@@ -249,8 +240,7 @@
         img {
             width: 90px;;
             height: 90px;
-        }
-        
+        } 
     }
     
     .container {
@@ -272,10 +262,8 @@
         p:nth-of-type(2n) {
             width: 580px;
             font-size: 17px;
-        }
-        
+        }  
     }
-
 }
 
 
@@ -315,11 +303,9 @@
         
         p:first-of-type {
             padding-top: 5px;
-        }
-        
+        }  
     }
 
-    
     #skills {
         
         padding-bottom: 9%;
@@ -327,7 +313,6 @@
         p {
             font-size: 16px;
         }
-    
     }
     
     .container {
@@ -354,10 +339,8 @@
         p:nth-of-type(2n) {
             width: 650px;
         }
-    }
-    
+    } 
 }
-
 
 @media (min-width: 1280px) {
     
@@ -392,6 +375,5 @@
         h1 {
             font-size: 30px;
         }    
-    }
-    
+    }  
 }
