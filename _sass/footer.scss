@@ -11,9 +11,7 @@ footer {
     background-color: #1c1c1c;
     
     h1 {
-        flex-direction: column;
         width: 280px;
-        text-align: left;
         font-size: 18px;
         margin-top: 10%;
         color: white;
@@ -23,10 +21,8 @@ footer {
         width: 280px;
         font-size: 14px;
         color: white;
-        text-align: left;
     }   
 }
-
 
 @media (min-width: 480px) {
     
@@ -39,8 +35,7 @@ footer {
         p {
             width: 380px;
         }
-    }
-    
+    }  
 }
 
 @media (min-width: 600px) {
@@ -55,10 +50,8 @@ footer {
         p {
             width: 480px;
             font-size: 16px;
-        }
-        
-    }
-    
+        }       
+    }    
 }
 
 @media (min-width: 800px) {
@@ -74,10 +67,8 @@ footer {
         p {
             width: 680px;
             font-size: 16px;
-        }
-        
+        } 
     }
-
 }
 
 @media (min-width: 1100px) {
@@ -101,9 +92,7 @@ footer {
             font-size: 18px;
             margin-left: 7%;
         }
-       
-    }
-    
+    } 
 }
 
 @media (min-width: 1280px) {
@@ -111,5 +100,4 @@ footer {
     #contacts h1 {
         font-size: 30px;
     }
-}
-    
+}   
