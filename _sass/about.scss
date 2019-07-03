@@ -1,9 +1,9 @@
 @import "variables";
 
-section {
+#skills, #education, #bio, .description {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 
 }
 
@@ -45,27 +45,6 @@ section {
     padding-bottom: 20%;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
     
-    ul {
-        display: block;
-        width: 300px;
-        padding: 0px;
-        margin-top: 5%;
-        
-        li {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100px;
-            float: left;
-            padding-left: 30px;
-            padding-bottom: 40px;
-        }
-        
-        li:nth-of-type(2n) {
-            float: none;
-        }
-    }
-    
     p {
         text-align: center;
         width: 160px;
@@ -83,7 +62,25 @@ section {
     img {
         width: 70px;;
         height: 70px;
-        margin-top: 5%;
+    }
+}
+
+.container {
+    width: 100%;
+    padding: 0px;
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas: "psd ids"
+                         "ill aft"
+                         "pre ske"
+                         "bra none";
+    
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30%; 
     }
 }
 
@@ -131,11 +128,27 @@ section {
 @media (min-width: 480px) {
     
     #bio h1, #skills h1, #education h1 {
-    margin-top: 20%;
+        margin-top: 20%;
     }
     
     #bio p {
         width: 380px;
+    }
+    
+    #skills ul {
+        
+        p {
+            font-size: 14px;
+            padding-top: 10px;
+        }
+        
+        p:nth-of-type(2n+1) {
+            font-size: 16px;
+        }
+    }
+    
+    .container {
+        width: 90%;
     }
     
     #education p:nth-of-type(2n) {
@@ -179,26 +192,10 @@ section {
         }          
     }
     
-    #skills ul {
-        width: 380px;
-        
-        li {
-            padding-left: 27px;
-            margin-right: 100px;
-        }
-        
-        li:nth-of-type(2n) {
-            margin-bottom: 60px;
-        }
-        
-        p {
-            font-size: 14px;
-            padding-top: 10px;
-        }
-        
-        p:nth-of-type(2n+1) {
-            font-size: 16px;
-        }
+    .container {
+        grid-template-areas: "psd ids ill"
+                             "aft pre ske"
+                             "bra none none";                         
     }
 
     #education {
@@ -254,6 +251,10 @@ section {
             height: 90px;
         }
         
+    }
+    
+    .container {
+        width: 80%;
     }
 
     #education {
@@ -320,20 +321,18 @@ section {
 
     
     #skills {
-        padding-bottom: 9%;
         
-        ul {
-            width: 1000px;
-            display: flex;
-            flex-direction: row;
-            flex-flow: row wrap;
-            margin-left: 7%;
-        }
+        padding-bottom: 9%;
         
         p {
             font-size: 16px;
         }
     
+    }
+    
+    .container {
+        grid-template-areas: "psd ids ill aft"
+                             "pre ske bra none";
     }
  
     #education {

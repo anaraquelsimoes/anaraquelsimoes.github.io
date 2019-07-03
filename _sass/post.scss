@@ -1,6 +1,9 @@
 @import "variables";
 
 #posts {
+
+    display: flex;
+    flex-direction: column;
     
     figure {
         display: flex;
@@ -19,29 +22,31 @@
         padding-top: 0;
     }
     
+    h1, h2, p {
+        max-width: 700px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    
     h1 {
-        width: 93%;
         font-size: 18px;
         font-weight: bold;
         text-align: left;
-        padding-left: 7%;
         padding-top: 13%;
         margin: 0;
     }
     
     h2 {
-        width: 93%;
         font-size: 16px;
         font-weight: normal;
         text-align: left;
-        padding-left: 7%;
         padding-top: 3%;
         margin: 0;
         color: $subtitlecolor;
     }
     
     h3 {
-        idth: 93%;
+        width: 100%;
         font-size: 14px;
         font-weight: normal;
         text-align: center;
@@ -51,7 +56,6 @@
     }
     
     p {
-        width: 85%;
         font-size: 16px;
         text-align: left;
         line-height: 2;
@@ -64,9 +68,114 @@
     figure:last-of-type {
         margin-bottom: 30%;
     }
-   
+    
+    h1:nth-of-type(2) {
+        padding-bottom: 3%;
+    }
 }
  
  
+@media (min-width: 480px) {
+    #posts {
+        
+       .top_image {
+            margin-top: 18%;
+        } 
+    }  
+}
+
+@media (min-width: 600px) {
+    #posts {
+        
+       .top_image {
+            margin-top: 15%;
+        } 
+    }   
+}
+
+@media (min-width: 800px) {
+    #posts {
+    
+        .top_image {
+            margin-top: 10%;
+        }
+        
+        h1 {
+            font-size: 22px;
+            padding-top: 10%;
+        }
+        
+        h2 {
+            font-size: 18px;
+        }
+        
+        p {
+            max-width: 700px;
+        }
+        
+        p:first-of-type {
+            margin-top: 7%;
+        }
+        
+        figure:last-of-type {
+            margin-bottom: 20%;
+        }   
+    }     
+}
+
+@media (min-width: 1100px) {
+    #posts {
+    
+        .top_image {
+            margin-top: 8%;
+        }
+        
+        h1 {
+            font-size: 25px;
+            padding-top: 8%;
+        }
+        
+        h2 {
+            padding-top: 2%;
+        } 
+        
+        h3 {
+            font-size: 16px;
+        } 
+        
+        p {
+            font-size: 18px;
+            line-height: 2.2;
+        }
+        
+        p:first-of-type {
+            margin-top: 5%;
+        } 
+    }     
+}
 
 
+@media (min-width: 1280px) {
+    #posts {
+    
+        .top_image {
+            margin-top: 7%;
+        }
+        
+        h1 {
+            font-size: 32px;
+        }
+        
+        h2 {
+            font-size: 22px;
+        }
+        
+        h3 {
+            font-size: 18px;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+    } 
+}
