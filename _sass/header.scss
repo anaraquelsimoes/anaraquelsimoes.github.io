@@ -1,7 +1,9 @@
+@import "variables";
+
 header {
     height: 100vh;
     width: 100%;
-    background: url(/assets/images/teste_4.jpg);
+    background: url(/assets/images/boost_medio_pequeno.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -13,8 +15,6 @@ div {
     flex-direction: row;
     position: fixed;
     top: 0;
-    /*background-color: whitesmoke;
-    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);*/
 }
 
 div span {
@@ -39,28 +39,26 @@ nav {
     justify-content: center;
     right: 15px;
     top: 10px;
-}
-
-nav ul li {
-    float: left;
-    list-style: none;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    transition: 0.2s;
-}
-
-nav a:hover {
-    opacity: 0.5;
-    transition: 0.2s;
- 
-
+    
+    ul li {
+        float: left;
+        list-style: none;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $titlecolor;
+        transition: 0.2s;
+    }
+    
+    a:hover {
+        opacity: 0.5;
+        transition: 0.2s;
+    }
 }
 
 header article {
@@ -72,20 +70,22 @@ header article {
     height: 100%;
 }
 
-article h1 {
-    font-size: 26px;
-    text-align: center;
-    width: 300px;
+article {
+    
+    h1 {
+        font-size: 26px;
+        text-align: center;
+        width: 300px;
+    }
+    
+    p {
+        width: 280px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 2;
+        margin-top: 0px;
+    }  
 }
-
-article p {
-    width: 280px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 2;
-    margin-top: 0px;
-}
-
 
 .arrow {
     width: 8%;
@@ -108,26 +108,30 @@ article p {
     
     header {
     width: auto;
-    background: url(/assets/images/boost_medio_pequeno.jpg);    
-    }
-    
-    header nav ul li {
-        font-size: 16px;
-        padding-right: 12px;
-        padding-left: 12px;
-    }
-
-    article h1 {
-        font-size: 38px;
-        text-align: left;
-        width: 350px;
+    background: url(/assets/images/boost_medio_pequeno.jpg); 
+        
+        nav ul li {
+            font-size: 16px;
+            padding-right: 12px;
+            padding-left: 12px;
+        }
     }
 
-    article p {
-        width: 350px;
-        font-size: 17px;
-        text-align: left;
-        line-height: 2;
+    article {
+        
+        h1 {
+            font-size: 38px;
+            text-align: left;
+            width: 350px;
+        }
+        
+        p {
+            width: 350px;
+            font-size: 17px;
+            text-align: left;
+            line-height: 2;
+        }
+        
     }
     
     .arrow {
@@ -140,21 +144,22 @@ article p {
     
     header {
     width: auto;
-    background: url(/assets/images/boost_medio.jpg);    
-    }
-    
-    header article {
-        align-items: flex-start;
-    }
-    
-    article h1 {
-        margin-left: 10%;
-    }
+    background: url(/assets/images/boost_medio.jpg);
+        
+        article {
+            align-items: flex-start;  
+        } 
+            
+        h1 {
+            margin-left: 10%;
+        }
+        
+        p {
+            width: 400px;
+            margin-left: 10%;
+        }
 
-    article p {
-        width: 400px;
-        margin-left: 10%;
-    }
+    } 
     
     .arrow {
         width: 8%;
@@ -174,16 +179,20 @@ article p {
         padding-left: 16px;
     }
 
-    article h1 {
-        width: 340px;
-        font-size: 40px;
-        margin-left: 6%;
-    }
-
-    article p {
-        width: 450px;
-        font-size: 20px;
-        margin-left: 6%;
+    article {
+        
+        h1 {
+            width: 340px;
+            font-size: 40px;
+            margin-left: 6%;
+        }
+        
+        p {
+            width: 450px;
+            font-size: 20px;
+            margin-left: 6%;
+        }
+        
     }
     
 }

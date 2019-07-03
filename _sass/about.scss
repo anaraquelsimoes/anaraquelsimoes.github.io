@@ -1,3 +1,5 @@
+@import "variables";
+
 section {
     display: flex;
     align-items: center;
@@ -11,12 +13,7 @@ section {
     text-align: center;
     font-size: 20px;
     margin-top: 30%;
-    color: black;
-}
-
-#bio img {
-    width: 90%;
-    margin-top: 5%;
+    color: $titlecolor;
 }
 
 #bio {
@@ -24,65 +21,70 @@ section {
     height: 100%;
     padding-bottom: 20%;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
+    
+    img {
+        width: 90%;
+        margin-top: 5%;
+    }
+    
+    p {
+        width: 280px;
+        font-size: 14px; 
+        line-height: 2;
+    }
+    
+    p:first-of-type {
+        padding-top: 10%;
+    }
 }
 
-#bio p {
-    width: 280px;
-    font-size: 14px; 
-    line-height: 2;
-
-}
-
-#bio p:first-of-type {
-    padding-top: 10%;
-}
 
 #skills {
     width: 100%;
     height: 100%;
     padding-bottom: 20%;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
-}
-
-#skills ul {
-    display: block;
-    width: 300px;
-    padding: 0px;
-    margin-top: 5%;
-}
-
-#skills ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
-    float: left;
-    padding-left: 30px;
-    padding-bottom: 40px;
-}
-
-#skills ul li:nth-of-type(2n) {
-    float: none;
-}
-
-#skills p {
-    text-align: center;
-    width: 160px;
-    font-size: 10px;
-    margin: 0px;
-    padding-top: 5px;
-}
-
-#skills p:nth-of-type(2n+1) {
-    font-size: 12px;
-    font-weight: bold;
-    padding-top: 20px;
-}
-
-#skills img {
-    width: 70px;;
-    height: 70px;
-    margin-top: 5%;
+    
+    ul {
+        display: block;
+        width: 300px;
+        padding: 0px;
+        margin-top: 5%;
+        
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100px;
+            float: left;
+            padding-left: 30px;
+            padding-bottom: 40px;
+        }
+        
+        li:nth-of-type(2n) {
+            float: none;
+        }
+    }
+    
+    p {
+        text-align: center;
+        width: 160px;
+        font-size: 10px;
+        margin: 0px;
+        padding-top: 5px;
+    }
+    
+    p:nth-of-type(2n+1) {
+        font-size: 12px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    
+    img {
+        width: 70px;;
+        height: 70px;
+        margin-top: 5%;
+    }
 }
 
 #education {
@@ -90,40 +92,41 @@ section {
     height: 100%;
     padding-bottom: 20%;
     box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, .1);
+    
+    ol {
+        list-style: none;
+        padding-left: 0px;
+        
+        li {
+            padding-bottom: 8%;
+        }
+    }
+    
+    h2 {
+        width: 280px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 2;
+    }
+    
+    p:nth-of-type(2n+1) {
+        color: $subtitlecolor;
+        width: 260px;
+        font-size: 15px;
+        text-align: left;
+        line-height: 2;
+    }
+    
+    p:nth-of-type(2n) {
+        width: 280px;
+        font-size: 14px;
+        text-align: left;
+        padding-top: 3%;
+        line-height: 2;
+    }
 }
 
-#education ol {
-    list-style: none;
-    padding-left: 0px;
-}
-
-#education ol li {
-    padding-bottom: 8%;
-}
-
-#education h2 {
-    width: 280px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    line-height: 2;
-}
-
-#education p:nth-of-type(2n+1) {
-    color: darkgrey;
-    width: 260px;
-    font-size: 15px;
-    text-align: left;
-    line-height: 2;
-}
-
-#education p:nth-of-type(2n) {
-    width: 280px;
-    font-size: 14px;
-    text-align: left;
-    padding-top: 3%;
-    line-height: 2;
-}
 
 @media (min-width: 480px) {
     
@@ -159,52 +162,59 @@ section {
     }
     
     #bio h1, #skills h1, #education h1 {
-    font-size: 25px;
-    margin-top: 18%;
+        font-size: 25px;
+        margin-top: 18%;
 
     }
 
-    #bio p {
-        width: 470px;
-        font-size: 17px;
-    }
-    
-    #bio img {
-        width: 80%;
+    #bio {
+        
+        p {
+            width: 470px;
+            font-size: 17px;
+        }
+        
+        img {
+            width: 80%;
+        }          
     }
     
     #skills ul {
         width: 380px;
+        
+        li {
+            padding-left: 27px;
+            margin-right: 100px;
+        }
+        
+        li:nth-of-type(2n) {
+            margin-bottom: 60px;
+        }
+        
+        p {
+            font-size: 14px;
+            padding-top: 10px;
+        }
+        
+        p:nth-of-type(2n+1) {
+            font-size: 16px;
+        }
     }
 
-    #skills ul li {
-        padding-left: 27px;
-        margin-right: 100px;
-    }
-
-    #skills ul li:nth-of-type(2n) {
-        margin-bottom: 60px;
-    }
-
-    #skills p {
-        font-size: 14px;
-        padding-top: 10px;
-    }
-
-    #skills p:nth-of-type(2n+1) {
-        font-size: 16px;
-    }
-
-    #education h2 {
-        width: 480px;
-    }
-
-    #education p:nth-of-type(2n+1) {
-        width: 480px;
-    }
-    
-    #education p:nth-of-type(2n) {
-        width: 480px;
+    #education {
+        
+        h2 {
+            width: 480px;
+        }
+        
+        p:nth-of-type(2n+1) {
+            width: 480px;
+        }
+        
+        p:nth-of-type(2n) {
+            width: 480px;
+        }
+ 
     }
 
 }
@@ -213,51 +223,64 @@ section {
 @media (min-width: 800px) {
   
     #bio h1, #skills h1, #education h1 {
-    margin-top: 15%;
+        margin-top: 15%;
     }
     
-    #bio img {
-        width: 70%;
-    }
-
-    #bio p {
-        width: 570px;
-        font-size: 17px;
-    }
-    
-    #skills p:nth-of-type(2n+1) {
-        font-size: 17px;
-    }
-
-    #skills p {
-        font-size: 15px;
+    #bio {
+        
+        img {
+            width: 70%;
+        }
+        
+        p {
+            width: 570px;
+            font-size: 17px;
+        }
+        
     }
     
-    #skills img {
-        width: 90px;;
-        height: 90px;
+    #skills {
+        
+        p {
+            font-size: 15px;
+        }
+        
+        p:nth-of-type(2n+1) {
+            font-size: 17px;
+        }
+        
+        img {
+            width: 90px;;
+            height: 90px;
+        }
+        
     }
 
-    #education h2 {
-        width: 580px;
-        font-size: 18px;
+    #education {
+        
+        h2 {
+            width: 580px;
+            font-size: 18px;
+        }
+        
+        p:nth-of-type(2n+1) {
+            width: 580px;
+            font-size: 17px;
+        }
+        
+        p:nth-of-type(2n) {
+            width: 580px;
+            font-size: 17px;
+        }
+        
     }
 
-    #education p:nth-of-type(2n+1) {
-        width: 580px;
-        font-size: 17px;
-    }
-
-    #education p:nth-of-type(2n) {
-        width: 580px;
-        font-size: 17px;
-    }
 }
 
 
 @media (min-width: 1100px) {
     
-    section {
+    #bio, #skills, #education {
         display: flex;
         align-items: flex-start;
     } 
@@ -270,62 +293,68 @@ section {
         margin-left: 7%;
     }
     
-    #bio section {
-        display: block;
+    #bio {
+        
+        section {
+            display: block;
+        }
+        
+        img {
+            width: 450px;
+            float: left;
+            margin-left: 17%;
+        }
+        
+        p {
+            width: 470px;
+            font-size: 18px;
+            margin-left: 120%;
+            float: none;
+        }
+        
+        p:first-of-type {
+            padding-top: 5px;
+        }
+        
     }
 
-    #bio img {
-        width: 450px;
-        float: left;
-        margin-left: 17%;
-    }
-
-    #bio p {
-        width: 470px;
-        font-size: 18px;
-        margin-left: 120%;
-        float: none;
-    }
-    
-    #bio p:first-of-type {
-        padding-top: 5px;
-    }
     
     #skills {
         padding-bottom: 9%;
-    }
-
-    #skills ul {
-        width: 1000px;
-        display: flex;
-        flex-direction: row;
-        flex-flow: row wrap;
-        margin-left: 7%;
-    }
-
-    #skills p {
-        font-size: 16px;
-    }
+        
+        ul {
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            margin-left: 7%;
+        }
+        
+        p {
+            font-size: 16px;
+        }
     
+    }
+ 
     #education {
         padding-bottom: 12%;
-    }
-    
-    #education ol {
-        margin-left: 7%;
-    }
-
-    #education h2 {
-        font-size: 21px;
-        padding-top: 0%;
-    }
-
-    #education p:nth-of-type(2n+1) {
-        font-size: 18px;
-    }
-
-    #education p:nth-of-type(2n) {
-        width: 650px;
+        
+        ol {
+            margin-left: 7%;
+        }
+        
+        h2 {
+            font-size: 21px;
+            padding-top: 0%;
+        }
+        
+        p:nth-of-type(2n+1) {
+            font-size: 18px;
+        }
+        
+        p:nth-of-type(2n) {
+            width: 650px;
+        }
     }
     
 }
@@ -333,37 +362,37 @@ section {
 
 @media (min-width: 1280px) {
     
-    #bio h1 {
-        font-size: 30px;
-        margin-top: 11%;
-    }
-    
     #bio {
         padding-bottom: 15%;
-    }
-
-    #bio img {
-        width: 550px;
-    }
-
-    #bio p {
-        margin-left: 128%;
+        
+        h1 {
+            font-size: 30px;
+            margin-top: 11%;
+        }
+        
+        img {
+            width: 550px;
+        }
+        
+        p {
+            margin-left: 128%;
+        }
     }
     
-    #skills h1 {
-        font-size: 30px;
-    }
-    
-     #skills {
+    #skills {
         padding-bottom: 8%;
+        
+        h1 {
+            font-size: 30px;
+        }
     }
     
     #education {
         padding-bottom: 10%;
+        
+        h1 {
+            font-size: 30px;
+        }    
     }
-    
-    #education h1 {
-        font-size: 30px;
-    }    
     
 }
